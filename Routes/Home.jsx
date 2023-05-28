@@ -4,7 +4,7 @@ import Hero from '../src/Components/Hero'
 import Destination from '../src/Components/Destination'
 import Trips from '../src/Components/Trips'
 import Footer from '../src/Components/Footer'
-import HeroImage from 'src/assets/Images/neom-aWHKsYkbCi8-unsplash.jpg'
+import HeroImage from '/src/assets/Images/neom-aWHKsYkbCi8-unsplash.jpg'
 
 function Home() {
   return (
