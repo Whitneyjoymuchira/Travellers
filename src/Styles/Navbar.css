@@ -1,0 +1,146 @@
+.NavbarItems {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 80px;
+  border-radius: 13px;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 9;
+
+}
+.logo {
+  color: #222;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  text-decoration: none;
+  
+ 
+ 
+}
+.nav-links  {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+}
+.nav-links i {
+  padding-right: 10px;
+}
+.nav-links:hover {
+  color:#fff;
+  background-color: #01959a;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.nav-links-mobile{
+  display:none;
+}
+button{
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius:0.3rem ;
+  font-weight: 600;
+  border:none;
+  cursor: pointer;
+  transition:0.2s ease-in-out ;
+}
+button:hover{
+  background-color: #151516;
+  color:#fff;
+}
+
+.menu-icons{
+  display: none;
+}
+@media (max-width: 850px) {
+.nav-menu{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: white;
+width:100%;
+height:auto;
+position:absolute;
+top:0;
+left:-100%; 
+ opacity: 1;
+align-items:stretch;
+padding: 80px 0 30px 0;
+margin:0;
+
+
+
+}
+.nav-menu.active{
+  left:0;
+  opacity: 1;
+  z-index: -1;
+  
+}
+.nav-links{
+  display: block;
+  width:100%;
+  font-size: 1.2rem;
+  padding:2rem;
+}
+.nav-links:hover{
+  color:#fff;
+  text-decoration: none;
+  background-color: #01959a;
+}
+button{
+display: none;
+}
+.nav-links-mobile{
+  display:block;
+  text-align: center;
+  padding:1.5rem;
+  margin:auto;
+  border-radius: 4px;
+  width:80%;
+  text-decoration: none;
+  background-color: #01959a;
+  color:white;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+
+}
+.nav-links-mobile{
+  text-decoration:none;
+  
+}
+
+.nav-links-mobile:hover{
+  background-color: #222;
+  color:#fff;
+  text-decoration:none;
+ 
+}
+
+.NavbarItems{
+  z-index: 99;
+}
+.menu-icons{
+  display:block;
+}
+.menu-icons i{
+  font-size: 1.2rem;
+  color: #222;
+}
+} 
